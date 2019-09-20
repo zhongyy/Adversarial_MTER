@@ -4,7 +4,7 @@ This is the code of ICCV paper[《Adversarial Learning with Margin-based Triplet
 
 The Deep neural networks (DNNs) have achieved great success on a variety of computer vision tasks, however, they are highly vulnerable to adversarial attacks. To address this problem, we propose to improve the local smoothness of the representation space, by integrating a margin-based triplet embedding regularization term into the classification objective, so that the obtained model learns to resist adversarial examples. The two optimization steps in MTER, vulnerability exploitation and fixing, strive to attack each other but also together improve the robustness of DNNs gradually.
 
-![arch](https://github.com/zhongyy/Adversarial_MTER/blob/master/illustration.jpg)
+![arch](https://github.com/zhongyy/Adversarial_MTER/edit/master/illustration.jpg)
 
 ## Usage Instructions
 
