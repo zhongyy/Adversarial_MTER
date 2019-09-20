@@ -15,12 +15,12 @@ The code is adopted from [InsightFace](https://github.com/deepinsight/insightfac
 ```
 pip install mxnet-cu90
 ```
-2. download the code as `unequal_code/`
+2. download the code as `Adversarial_MTER/`
 ```
 git clone https://github.com/zhongyy/Adversarial_MTER.git
 ```
 
-3.  The CASIA-WebFace dataset is preprocessed by ourseleves using MTCNN. The VGGFace2 and MS1MV1 datasets we used ace downloaded from Data Zoo of [InsightFace](https://github.com/deepinsight/insightface).  
+3.  The CASIA-WebFace dataset is preprocessed by ourseleves using MTCNN. The VGGFace2 and MS1MV1 datasets are downloaded from Data Zoo of [InsightFace](https://github.com/deepinsight/insightface).  
 
 
 4. MNIST models are trained from scratch.
