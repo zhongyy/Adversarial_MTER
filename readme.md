@@ -38,3 +38,4 @@ Face models
 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python -u ad_face.py --network r50  --loss-type 4 --margin-m 0.5  --data-dir /ssd/CASIA_rec/  --lr 0.01 --main-per-batch-size 90 --adv-per-batch-size 120 --ctx-num 4 --ctx-adv-num 2 --prefix ../models/ad_train/model --pretrained  /home/zhongyaoyao/insightface/models/r50_webface_arc/model,100 2>&1|tee adv_r50_webface_arc.log
 ```
 
+6. Test codes are on going.
