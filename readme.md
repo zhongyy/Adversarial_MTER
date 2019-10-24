@@ -22,7 +22,7 @@ git clone https://github.com/zhongyy/Adversarial_MTER.git
 
 3.  The CASIA-WebFace dataset is preprocessed by ourseleves using MTCNN. The VGGFace2 and MS1MV1 datasets are downloaded from Data Zoo of [InsightFace](https://github.com/deepinsight/insightface).  
 
-
+### Training Instructions
 4. MNIST models are trained from scratch.
 ```
 CUDA_VISIBLE_DEVICES='0,1' python ad_mnist.py --loss-type 0 --verbose 30 --network o18 --lr 0.1 --lr-steps 8000,16000  --end-epoch 100 --main-per-batch-size 2700 --adv-per-batch-size 1800 --adv-round 50 --adv-alpha 0.20 --adv-sigma 0.35 --adv-thd 0.05 --weightadv 1 --prefix /home/zhongyaoyao/insightface/models/adv_mnist_o18_soft_0.20/model 2>&1|tee adv_mnist_o18_soft_0.20.log
@@ -37,5 +37,9 @@ Face models
 ```
 CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python -u ad_face.py --network r50  --loss-type 4 --margin-m 0.5  --data-dir /ssd/CASIA_rec/  --lr 0.01 --main-per-batch-size 90 --adv-per-batch-size 120 --ctx-num 4 --ctx-adv-num 2 --prefix ../models/ad_train/model --pretrained  /home/zhongyaoyao/insightface/models/r50_webface_arc/model,100 2>&1|tee adv_r50_webface_arc.log
 ```
+### Testing Instructions
+6. First, test the model on LFW to get the distance threshold of FAR=1E-3 (Judge a face pair is positive or negative).
 
-6. Test codes are on going.
+7. Then, evaluate the robustness of a model by calculating the hit rate on the test dataset.  
+
+8. Evaluate the face recognition performance of a model on LFW and YTF
