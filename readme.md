@@ -45,5 +45,18 @@ CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python -u ad_face.py --network r50  --loss-ty
 8. Evaluate the face recognition performance of a model on LFW and YTF
 
 ## Experiment results
-All the models can be downloaded from [InsightFace](https://github.com/deepinsight/insightface).  
+All the models listed in the following table can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/1dJHhzUF73lVk2Bd8Gy6XzA).  
 ![arch](https://github.com/zhongyy/Adversarial_MTER/blob/master/MTER_FIG4.png)
+
+
+## Citation
+
+If you find **MTER** useful in your research, please consider to cite:
+
+@inproceedings{zhong2019adversarial,
+  title={Adversarial Learning with Margin-based Triplet Embedding Regularization},
+  author={Zhong, Yaoyao and Deng, Weihong},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  year={2019}
+}
+  
