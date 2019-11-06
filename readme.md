@@ -53,10 +53,10 @@ All the models listed in the following table can be downloaded from [Baidu Netdi
 
 If you find **MTER** useful in your research, please consider to cite:
 
-@inproceedings{zhong2019adversarial,
-  title={Adversarial Learning with Margin-based Triplet Embedding Regularization},
-  author={Zhong, Yaoyao and Deng, Weihong},
-  booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
-  year={2019}
-}
+	@InProceedings{zhong2019adversarial,
+	  title = {Adversarial Learning with Margin-based Triplet Embedding Regularization},
+	  author = {Zhong, Yaoyao and Deng, Weihong},
+	  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+	  year = {2019}
+	}
   
