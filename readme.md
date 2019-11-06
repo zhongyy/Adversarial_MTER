@@ -43,3 +43,7 @@ CUDA_VISIBLE_DEVICES='0,1,2,3,4,5' python -u ad_face.py --network r50  --loss-ty
 7. Then, evaluate the robustness of a model by calculating the hit rate on the test dataset.  
 
 8. Evaluate the face recognition performance of a model on LFW and YTF
+
+## Experiment results
+All the models can be downloaded from [InsightFace](https://github.com/deepinsight/insightface).  
+![arch](https://github.com/zhongyy/Adversarial_MTER/blob/master/MTER_FIG4.png)
